@@ -1,38 +1,246 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+            @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+             :root {
+                /* font-family */
+                --open-sans: "Open Sans", sans-serif;
+                --roboto-flex: "Roboto Flex", sans-serif;
+                /* font-size */
+                --fs-xs: 16px;
+                --fs-sm: 20px;
+                --fs-md: 24px;
+                --fs-lg: 40px;
+                --fs-xl: 48px;
+                --fs-xxl: 68px;
+                /* color */
+                --green-blue: #018995;
+                --green-light: #5DB4BB;
+                --white-green: #E6F4F5;
+                --white: white;
+                --black: #17151A;
+                /* line-height */
+                --lh-xs: 125%;
+                --lh-sm: 130%;
+                --lh-md: 140%;
+                --lh-lg: 145%;
+                --lh-xl: 150%;
+                --lh-xxl: 160%;
+            }
+            /* font-family */
+            
+            .open {
+                font-family: var(--open-sans);
+            }
+            
+            .robotoFlex {
+                font-family: var(--roboto-flex);
+            }
+            /* font-size */
+            
+            .fs_xs {
+                font-size: var(--fs-xs);
+            }
+            
+            .fs_sm {
+                font-size: var(--fs-sm);
+            }
+            
+            .fs_md {
+                font-size: var(--fs-md);
+            }
+            
+            .fs_lg {
+                font-size: var(--fs-lg);
+            }
+            
+            .fs_xl {
+                font-size: var(--fs-xl);
+            }
+            
+            .fs_xxl {
+                font-size: var(--fs-xxl);
+            }
+            /* color */
+            
+            .greenBlue {
+                color: var(--green-blue)
+            }
+            
+            .white {
+                color: var(--white);
+            }
+            
+            .black {
+                color: var(--black);
+            }
+            /* background-color */
+            
+            .greenBlueBg {
+                background-color: var(--green-blue);
+            }
+            /* line-height */
+            
+            .lh_xs {
+                line-height: var(--lh-xs);
+            }
+            
+            .lh_sm {
+                line-height: var(--lh-sm);
+            }
+            
+            .lh_md {
+                line-height: var(--lh-md);
+            }
+            
+            .lh_lg {
+                line-height: var(--lh-lg);
+            }
+            
+            .lh_xl {
+                line-height: var(--lh-xl);
+            }
+            
+            .lh_xxl {
+                line-height: var(--lh-xxl);
+            }
+            /* padding */
+            
+            .forTdayPadding {
+                padding-top: 19px;
+            }
+            /* statiestics-section*/
+            
+            .bg_img {
+                background-image: url(../src/assets/image/TodaySectionImg.webp);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 100% 100%;
+                min-height: 929px;
+            }
+            
+            .StatisticsCard {
+                background-color: var(--white);
+                border-radius: 10px;
+                padding: 33px 49px 31px 49px;
+                margin-left: 3px;
+                margin-right: 3px;
+                height: 100%;
+            }
+            
+            .smallStatisticsCard {
+                padding: 37px 0;
+                border-radius: 10px;
+                border: 1px solid var(--green-light);
+                background-color: var(--white-green);
+                max-width: 199px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            /* Average section */
+            
+            .RegisterNowbtn {
+                padding: 14px 22px;
+                color: var(--white);
+                background-color: var(--green-blue);
+                border: 1px solid transparent;
+                display: block;
+                justify-content: center;
+            }
+            
+            .companyCard {
+                max-width: 145px;
+                min-height: 134px;
+                border-radius: 10px;
+                box-shadow: 0px 10px 16.2px 0px #00000012;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .adani {
+                max-width: 70px;
+            }
+            
+            .tata {
+                max-width: 92px;
+            }
+            
+            .teslr {
+                max-width: 88px;
+            }
+            
+            .gapCompany {
+                gap: 8px
+            }
+            /* faq */
+            
+            .maxWidthFaq {
+                max-width: 870px;
+            }
+            
+            .maxWidthPhara {
+                max-width: 764px;
+            }
+            
+            .accordion {
+                --bs-accordion-border-color: none !important;
+                --bs-accordion-border-width: none !important;
+                --bs-accordion-active-color: none !important;
+                --bs-accordion-active-bg: none !important;
+                --bs-accordion-btn-focus-box-shadow: none !important;
+            }
+            
+            .accordion-item {
+                border-bottom: 1px solid var(--green-blue);
+                color: var(--bs-accordion-color);
+                background-color: var(--white) !important;
+            }
+            
+            .accordion-button::after {
+                background-color: var(--green-blue) !important;
+                flex-shrink: 0;
+                width: 30px !important;
+                height: 30px !important;
+                display: flex !important;
+                justify-content: center !important;
+                align-items: center !important;
+                margin-left: auto;
+                content: "";
+                background-image: url(./assets/svg/ArrowUp.svg);
+                background-repeat: no-repeat;
+                background-size: none !important;
+                transition: var(--bs-accordion-btn-icon-transition);
+                padding: 20px;
+                border-radius: 12px !important;
+            }
+            
+            .accordion-button:not(.collapsed) {
+                color: var(--bs-accordion-active-color);
+                background-color: var(--white) !important;
+                box-shadow: none !important;
+            }
+            /* media quary */
+            
+            @media (min-width: 576.5px) {
+                .gapCompany {
+                    gap: 29px
+                }
+            }
+            
+            @media (min-width:767.5px) {}
+            
+            @media (min-width:991.5px) {
+                .StatisticsCard {
+                    padding: 33px 24px 31px 24px;
+                }
+            }
+            
+            @media (min-width:1199.5px) {
+                .StatisticsCard {
+                    padding: 33px 49px 31px 49px;
+                }
+            }
+            
+            @media (min-width:1400px)and (max-width:1600px) {
+                .container {
+                    max-width: 1164px !important;
+                }
+            }
