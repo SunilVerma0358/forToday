@@ -51,7 +51,7 @@ const FooterSection = () => {
               <p className="open fw-bold fs_sm lh_md white mb-0 ">
                 {props.headingOne}
               </p>
-              <p className="open fw-normal fs_xs lh_xxl white mb-0 opacity pt-3">
+              <p className="open fw-normal fs_xs lh_xxl white mb-0 lh_xxl opacity pt-3">
                 {props.PharaOne}
               </p>
             </div>
@@ -61,10 +61,10 @@ const FooterSection = () => {
       <div className="borderTop FooterBottomPadding">
         <div className="container">
           <div className="d-flex justify-content-between flex-wrap align-items-center">
-            <p className="open fw-normal fs_xs lh_xxl white mb-0">
+            <p className="open fw-normal fs_xs lh_xxl white opacity mb-0 ">
               Privacy Policy <span>|</span> Conditions
             </p>
-            <p className="open fw-normal fs_xs lh_xxl white mb-0 pt-2 pt-sm-0">
+            <p className="open fw-normal fs_xs lh_xxl white mb-0 opacity pt-2 pt-sm-0 ">
               Report Abuse/ Spam | Copyright@{year}
             </p>
           </div>

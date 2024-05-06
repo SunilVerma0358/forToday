@@ -120,6 +120,10 @@
                 padding-top: 27px;
                 padding-bottom: 27px;
             }
+            
+            .footerPadding {
+                padding-top: 10px;
+            }
             /* max-width */
             
             .adani {
@@ -183,6 +187,20 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                transition: 300ms all linear;
+                cursor: pointer;
+            }
+            
+            .companyCard:hover {
+                animation: companyCard 1s linear;
+                transform: scale(105%);
+                box-shadow: 0 0 0 0.7em transparent;
+            }
+            
+            @keyframes companyCard {
+                0% {
+                    box-shadow: 0 0 #00000012;
+                }
             }
             
             .RegisterNowbtn:hover {
@@ -257,11 +275,11 @@
             
             .circle:hover {
                 border: 1.16px solid transparent;
-                animation: pulsegardiant 1s linear;
+                animation: pulsegardianttWO 1s linear;
                 box-shadow: 0 0 0 0.7em transparent;
             }
             
-            @keyframes pulsegardiant {
+            @keyframes pulsegardianttWO {
                 0% {
                     box-shadow: 0 0 var(--white);
                 }
@@ -307,7 +325,6 @@
                     /* -----------font-size----------- */
                     --fs-md: 24px;
                     --fs-lg: 40px;
-                    --fs-xl: 48px;
                     --fs-xxl: 68px;
                 }
                 .StatisticsCard {
@@ -316,6 +333,10 @@
             }
             
             @media (min-width:1199.5px) {
+                 :root {
+                    /* -----------font-size----------- */
+                    --fs-xl: 48px;
+                }
                 .StatisticsCard {
                     padding: 33px 49px 31px 49px;
                 }

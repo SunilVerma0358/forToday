@@ -10,11 +10,11 @@ const AverageEarn = () => {
       <div className="container pt-5 pt-lg-0  pb-sm-5">
         <div className="row justify-content-between align-items-center flex-column-reverse flex-lg-row">
           <div className="col-12 col-lg-5 pt-4 pt-md-5 pt-lg-0 text-center text-lg-start">
-            <h2 className="robotoFlex fw-normal fs_xl lh_xs black mb-3 pb-md-4">
+            <h2 className="robotoFlex fw-medium fs_xl lh_xs black pb-4">
               Average Earnings of a Registered User From a
-              <span className="fw-medium"> Deposit of $250 to 521$</span>
+              <span className="fw-bold"> Deposit of $250 to 521$</span>
             </h2>
-            <button className="RegisterNowbtn open fs_xs fw-semibold mt-1">
+            <button className="RegisterNowbtn open fs_xs fw-semibold mt-2">
               Register Now
             </button>
           </div>
