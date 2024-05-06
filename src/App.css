@@ -1,22 +1,22 @@
             @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
              :root {
-                /* font-family */
+                /* ------------font-family------------ */
                 --open-sans: "Open Sans", sans-serif;
                 --roboto-flex: "Roboto Flex", sans-serif;
-                /* font-size */
-                --fs-xs: 16px;
-                --fs-sm: 20px;
-                --fs-md: 24px;
-                --fs-lg: 40px;
-                --fs-xl: 48px;
-                --fs-xxl: 68px;
-                /* color */
+                /* -----------font-size----------- */
+                --fs-xs: 14px;
+                --fs-sm: 18px;
+                --fs-md: 20px;
+                --fs-lg: 32px;
+                --fs-xl: 36px;
+                --fs-xxl: 40px;
+                /* -------------color -------------*/
                 --green-blue: #018995;
                 --green-light: #5DB4BB;
                 --white-green: #E6F4F5;
                 --white: white;
                 --black: #17151A;
-                /* line-height */
+                /* ------------line-height------------ */
                 --lh-xs: 125%;
                 --lh-sm: 130%;
                 --lh-md: 140%;
@@ -24,7 +24,7 @@
                 --lh-xl: 150%;
                 --lh-xxl: 160%;
             }
-            /* font-family */
+            /* -----------------font-family----------------- */
             
             .open {
                 font-family: var(--open-sans);
@@ -33,7 +33,7 @@
             .robotoFlex {
                 font-family: var(--roboto-flex);
             }
-            /* font-size */
+            /* -----------------font-size----------------- */
             
             .fs_xs {
                 font-size: var(--fs-xs);
@@ -58,7 +58,7 @@
             .fs_xxl {
                 font-size: var(--fs-xxl);
             }
-            /* color */
+            /* ---------------------color--------------------- */
             
             .greenBlue {
                 color: var(--green-blue)
@@ -71,12 +71,12 @@
             .black {
                 color: var(--black);
             }
-            /* background-color */
+            /* ----------------background-color---------------- */
             
             .greenBlueBg {
                 background-color: var(--green-blue);
             }
-            /* line-height */
+            /* ---------------line-height ---------------*/
             
             .lh_xs {
                 line-height: var(--lh-xs);
@@ -101,12 +101,43 @@
             .lh_xxl {
                 line-height: var(--lh-xxl);
             }
-            /* padding */
+            /* ------------gap-class------------ */
+            
+            .gapFooterLink {
+                gap: 13px;
+            }
+            
+            .gapCompany {
+                gap: 8px
+            }
+            /* ---------------padding--------------- */
             
             .forTdayPadding {
                 padding-top: 19px;
             }
-            /* statiestics-section*/
+            
+            .FooterBottomPadding {
+                padding-top: 27px;
+                padding-bottom: 27px;
+            }
+            /* max-width */
+            
+            .adani {
+                max-width: 70px;
+            }
+            
+            .tata {
+                max-width: 92px;
+            }
+            
+            .maxWidthFaq {
+                max-width: 870px;
+            }
+            
+            .maxWidthPhara {
+                max-width: 764px;
+            }
+            /* ------------statiestics-section------------*/
             
             .bg_img {
                 background-image: url(../src/assets/image/TodaySectionImg.webp);
@@ -130,19 +161,18 @@
                 border-radius: 10px;
                 border: 1px solid var(--green-light);
                 background-color: var(--white-green);
-                max-width: 199px;
+                max-width: 150px;
                 margin-left: auto;
                 margin-right: auto;
             }
-            /* Average section */
+            /* ------------Average section------------ */
             
             .RegisterNowbtn {
                 padding: 14px 22px;
                 color: var(--white);
                 background-color: var(--green-blue);
                 border: 1px solid transparent;
-                display: block;
-                justify-content: center;
+                transition: all linear 300ms;
             }
             
             .companyCard {
@@ -155,30 +185,17 @@
                 align-items: center;
             }
             
-            .adani {
-                max-width: 70px;
+            .RegisterNowbtn:hover {
+                animation: pulsegardiant 1s linear;
+                box-shadow: 0 0 0 0.7em transparent;
             }
             
-            .tata {
-                max-width: 92px;
+            @keyframes pulsegardiant {
+                0% {
+                    box-shadow: 0 0 var(--green-blue);
+                }
             }
-            
-            .teslr {
-                max-width: 88px;
-            }
-            
-            .gapCompany {
-                gap: 8px
-            }
-            /* faq */
-            
-            .maxWidthFaq {
-                max-width: 870px;
-            }
-            
-            .maxWidthPhara {
-                max-width: 764px;
-            }
+            /* ---------------faq--------------- */
             
             .accordion {
                 --bs-accordion-border-color: none !important;
@@ -186,30 +203,19 @@
                 --bs-accordion-active-color: none !important;
                 --bs-accordion-active-bg: none !important;
                 --bs-accordion-btn-focus-box-shadow: none !important;
+                --bs-accordion-btn-icon-width: 32px !important;
             }
             
             .accordion-item {
                 border-bottom: 1px solid var(--green-blue);
-                color: var(--bs-accordion-color);
                 background-color: var(--white) !important;
             }
             
             .accordion-button::after {
-                background-color: var(--green-blue) !important;
-                flex-shrink: 0;
-                width: 30px !important;
-                height: 30px !important;
-                display: flex !important;
-                justify-content: center !important;
-                align-items: center !important;
                 margin-left: auto;
                 content: "";
                 background-image: url(./assets/svg/ArrowUp.svg);
-                background-repeat: no-repeat;
                 background-size: none !important;
-                transition: var(--bs-accordion-btn-icon-transition);
-                padding: 20px;
-                border-radius: 12px !important;
             }
             
             .accordion-button:not(.collapsed) {
@@ -217,17 +223,93 @@
                 background-color: var(--white) !important;
                 box-shadow: none !important;
             }
-            /* media quary */
             
-            @media (min-width: 576.5px) {
-                .gapCompany {
-                    gap: 29px
+            .accordion-button:not(.collapsed)::after {
+                background-image: url(../src/assets/svg/ArrowUp.svg) !important;
+                transform: var(--bs-accordion-btn-icon-transform);
+            }
+            
+            .accordion-body {
+                padding: var(--bs-accordion-body-padding-x);
+                padding-top: 0px !important;
+            }
+            /* ----------------footer-section---------------- */
+            
+            .footerImg {
+                background-image: url(../src/assets/image/footerImg.webp);
+                background-color: var(--green-blue);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+            }
+            
+            .opacity {
+                opacity: 80%;
+            }
+            
+            .circle {
+                border: 1.16px solid var(--white);
+                border-radius: 34px;
+                width: 34px;
+                height: 34px;
+                transition: all linear 300ms;
+            }
+            
+            .circle:hover {
+                border: 1.16px solid transparent;
+                animation: pulsegardiant 1s linear;
+                box-shadow: 0 0 0 0.7em transparent;
+            }
+            
+            @keyframes pulsegardiant {
+                0% {
+                    box-shadow: 0 0 var(--white);
                 }
             }
             
-            @media (min-width:767.5px) {}
+            .borderTop {
+                border-top: 1px solid #2F957A;
+            }
+            /* ---------------media quary--------------- */
+            
+            @media (min-width: 576.5px) {
+                 :root {
+                    /* -----------font-size----------- */
+                    --fs-xs: 16px;
+                    --fs-sm: 20px;
+                    --fs-md: 22px;
+                    --fs-lg: 40px;
+                    --fs-xl: 40px;
+                    --fs-xxl: 44px;
+                }
+                .gapCompany {
+                    gap: 29px
+                }
+                .smallStatisticsCard {
+                    max-width: 170px;
+                }
+            }
+            
+            @media (min-width:767.5px) {
+                 :root {
+                    /* -----------font-size----------- */
+                    --fs-md: 24px;
+                    --fs-xl: 44px;
+                    --fs-xxl: 48px;
+                }
+                .smallStatisticsCard {
+                    max-width: 199px;
+                }
+            }
             
             @media (min-width:991.5px) {
+                 :root {
+                    /* -----------font-size----------- */
+                    --fs-md: 24px;
+                    --fs-lg: 40px;
+                    --fs-xl: 48px;
+                    --fs-xxl: 68px;
+                }
                 .StatisticsCard {
                     padding: 33px 24px 31px 24px;
                 }

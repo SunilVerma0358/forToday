@@ -4,6 +4,7 @@ import "./App.css";
 import Statistics from "./components/Statistics";
 import AverageEarn from "./components/AverageEarn";
 import FaqAccording from "./components/FaqAccording";
+import FooterSection from "./components/FooterSection";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Statistics />
       <AverageEarn />
       <FaqAccording />
+      <FooterSection />
     </>
   );
 }

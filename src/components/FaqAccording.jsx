@@ -3,12 +3,12 @@ import { FaqMap } from "./common/Helper";
 
 const FaqAccording = () => {
   return (
-    <div className="py-5 my-5 ">
+    <div className="py-5 my-md-5 ">
       <div className="container pt-3">
         <h2 className="robotoFlex fs_xl lh_xs fw-medium mb-0 text-center pb-2">
           Frequently Asked <span className="fw-bold greenBlue">Questions</span>
         </h2>
-        <div className="pt-5 maxWidthFaq mx-auto">
+        <div className="pt-4 pt-md-5 maxWidthFaq mx-auto">
           <div className="accordion" id="accordionExample">
             {FaqMap.map((props, index) => (
               <div

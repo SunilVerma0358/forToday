@@ -64,3 +64,15 @@ export const FaqMap = [
       "Lorem ipsum dolor sit amet consectetur. Egestas maecenas ornare commodo ut. Ut orci eget dolor vel id. Sed nunc gravida porttitor vitae lectus eget..",
   },
 ];
+export const FooterMap = [
+  {
+    headingOne: "Disclaimer ",
+    PharaOne:
+      "This website is not a news agency, information website, or blog. It is a webpage aimed at promotional publications that use the technique of storytelling to illustrate the scope of the services and products offered. Therefore, the story told on this page is a infomercial or advertisement for informational and functional purposes, for an understanding of the potential of what is proposed. General.",
+  },
+  {
+    headingOne: "Risk Warning",
+    PharaOne:
+      "    Investing activities involve a high level of risk and may result in the total loss of the amount invested. For this reason, these activities may not be suitable for every type of investor. You should not invest money that you cannot afford to lose.",
+  },
+];
